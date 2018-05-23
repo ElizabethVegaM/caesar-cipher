@@ -10,8 +10,8 @@
   <header>
     <h1>Cifrado César</h1>
   </header>
-  <!-- Contenedor de mi página, para propósitos de estilo -->
-  <section id="container">
+  <!-- Sección de bienvenida -->
+  <section id="welcomeBox">
     <h2>Bienvenido, ¿qué te gustaría hacer?</h3>
     <!-- Botones de pregunta -->
     <div class="options" id="cipher">
@@ -21,6 +21,35 @@
       <button id="decodeBtn">Descifrar un mensaje</button>
     </div>
   </section>
+  <!-- Caja de cifrado -->
+  <section id="encodeBox">
+    <div>
+        <h3>Ingrese el texto a cifrar: </h3>
+        <input type="text" name="" id="">
+    </div>
+    <div>
+        <h3>Ingrese la cantidad de letras a moverse: </h3>
+        <input type="text" name="" id="">
+    </div>
+    <div>
+        <button id="cipherBtn">Cifrar</button>
+    </div>
+  </section>
+  <!-- Caja de descifrado -->
+  <section id="decodeBox">
+      <div>
+          <h3>Ingrese el texto a descifrar: </h3>
+          <input type="text" name="" id="">
+      </div>
+      <div>
+          <h3>Ingrese la cantidad de letras a moverse: </h3>
+          <input type="text" name="" id="">
+      </div>
+      <div>
+          <button id="decipherBtn">Descifrar</button>
+      </div>
+    </section>
+
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
