@@ -6,17 +6,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Título de mi página -->
   <header>
     <h1>Cifrado César</h1>
   </header>
-  <div id="container">
-    <section class="cipher">
-      <button>Cifrar un mensaje</button>
-    </section>
-    <section class="decipher">
-      <button>Descifrar un mensaje</button>
-    </section>
-  </div>
+  <!-- Contenedor de mi página, para propósitos de estilo -->
+  <section id="container">
+    <h2>Bienvenido, ¿qué te gustaría hacer?</h3>
+    <!-- Botones de pregunta -->
+    <div class="options" id="cipher">
+      <button id="encodeBtn">Cifrar un mensaje</button>
+    </div>
+    <div class="options" id="decipher">
+      <button id="decodeBtn">Descifrar un mensaje</button>
+    </div>
+  </section>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>

@@ -1,14 +1,38 @@
+header {
+    margin-top: 50pxem;
+}
+
+h1 {
+    font-size: 80px;
+}
+
 body {
     text-align: center;
 }
 
-.cipher {
-    float: left;
-    margin: 10% 20%;
+#container{
+    margin: auto;
+    width: 60%;
 }
 
-.decipher {
-    float: right;
-    margin: 10% 20%;
-    
+.options {
+    height: 100px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#cipher {
+    margin-top: 50px;
+}
+
+#decipher {
+    margin-top: 20px;
+}
+
+#encodeBtn, #decodeBtn {
+    font-size: 20px;
+    padding: 15px;
+
+}
+
