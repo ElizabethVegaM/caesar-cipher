@@ -1,9 +1,16 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
     margin-top: 50pxem;
 }
 
 body {
     text-align: center;
+    background: #1C0920;
+    background-image: url(https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png);
+    background-size: 100%;
 }
 
 h1 {
