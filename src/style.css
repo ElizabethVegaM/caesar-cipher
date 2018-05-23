@@ -1,1 +1,14 @@
-/* Acá va tu código */
+body {
+    text-align: center;
+}
+
+.cipher {
+    float: left;
+    margin: 10% 20%;
+}
+
+.decipher {
+    float: right;
+    margin: 10% 20%;
+    
+}
