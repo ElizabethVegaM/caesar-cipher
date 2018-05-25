@@ -29,7 +29,7 @@
     <div>
         <h3>Ingrese el texto a cifrar: </h3>
         <!-- <input type="text" name="" id="" size="50">  -->
-        <textarea name="" id="textBox" cols="30" rows="3" maxlength="300"></textarea>
+        <textarea class="textBox" cols="30" rows="3" maxlength="300"></textarea>
     </div>
     <div>
         <h3>Ingrese la cantidad de letras a moverse: </h3>
@@ -38,12 +38,15 @@
     <div class="btnBox">
         <button id="cipherBtn" type="submit">Cifrar</button>
     </div>
+    <div id="encodedBox">
+      <textarea class="textBox" id="encodedMsg" cols="30" rows="3" maxlength="300" readonly></textarea>
+    </div> 
   </section>
   <!-- Caja de descifrado -->
   <section id="decodeBox">
       <div>
           <h3>Ingrese el texto a descifrar: </h3>
-          <textarea name="" id="textBox" cols="30" rows="3" maxlength="300"></textarea>
+          <textarea name="" class="textBox" cols="30" rows="3" maxlength="300"></textarea>
       </div>
       <div>
           <h3>Ingrese la cantidad de letras a moverse: </h3>
@@ -51,6 +54,9 @@
       </div>
       <div class="btnBox">
           <button id="decipherBtn" type="submit">Descifrar</button>
+      </div>
+      <div id="decodedBox">
+        <textarea class="textBox" id="decodedMsg" cols="30" rows="3" maxlength="300" readonly></textarea>
       </div>
     </section>
     <footer>

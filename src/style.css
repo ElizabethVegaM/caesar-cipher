@@ -3,7 +3,7 @@
 }
 
 header {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 body {
@@ -76,20 +76,31 @@ input {
 #encodeBtn, #decodeBtn {
   font-size: 20px;
   padding: 15px;
+  box-shadow: 3px 3px 3px rgba(58, 57, 57, 0.753);
 }
 
-#textBox {
+.textBox {
     display: block;
     text-align: initial;
 }
 
 #encodeBox, #decodeBox {
   display: none;
-  width: 60%; 
+  width: 60%;
+  height: 80%; 
 }
 
 #toMain {
     float: left;
     margin: 0px 10px;
+}
+
+#cipherBtn, #decipherBtn {
+    font-size: 20px;
+}
+
+#encodedBox, #decodedBox {
+    display: none;
+    margin-top: 15px; 
 }
 
