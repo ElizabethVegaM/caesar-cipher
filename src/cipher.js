@@ -1,6 +1,6 @@
 window.cipher = {
   encode: () => {
-    /* Acá va tu código */
+    alphabetUpper = ['ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'];
   },
   decode: () => {
     /* Acá va tu código */

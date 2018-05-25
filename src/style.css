@@ -1,9 +1,6 @@
+/*Estilos generales de la página*/
 * {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-header {
-  margin-top: 30px;
 }
 
 body {
@@ -13,46 +10,20 @@ body {
   background-size: 100%;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: rgba(112, 109, 116, 0.596);
-    color: white;
-    text-align: center;
+h3 {
+  display: inline-block;
+}
+
+/*Header*/
+header {
+  margin-top: 30px;
 }
 
 h1 {
   font-size: 80px;
 }
 
-h3 {
-  display: inline-block;
-}
-
-textarea {
-    height: 100px;
-    width: 450px;
-    resize: none;
-}
-
-input {
-    width: 50px;
-}
-
-.options {
-  height: 100px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btnBox {
-    margin-top: 25px;
-}
-
+/*Estilos generales de las cajas*/
 #welcomeBox, #encodeBox, #decodeBox {
   margin: auto;
   max-width: 20%;
@@ -65,11 +36,21 @@ input {
   box-shadow: 5px 5px 5px rgba(58, 57, 57, 0.753);
   }
 
-#cipher {
+/*Sección de Bienvenida*/
+
+.options {
+  height: 100px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Botones de pregunta*/  
+#cipherBox {
   margin-top: 50px;
 }
 
-#decipher {
+#decipherBox {
   margin-top: 20px;
 }
 
@@ -79,28 +60,63 @@ input {
   box-shadow: 3px 3px 3px rgba(58, 57, 57, 0.753);
 }
 
+/*Cajas de Cifrado y Descifrado*/
 .textBox {
-    display: block;
-    text-align: initial;
+  display: block;
+  text-align: initial;
 }
-
 #encodeBox, #decodeBox {
   display: none;
   width: 60%;
-  height: 80%; 
-}
-
-#toMain {
-    float: left;
-    margin: 0px 10px;
 }
 
 #cipherBtn, #decipherBtn {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-#encodedBox, #decodedBox {
-    display: none;
-    margin-top: 15px; 
+textarea {
+  height: 100px;
+  width: 450px;
+  resize: none;
 }
+
+input {
+  width: 50px;
+}
+
+.btnBox {
+  margin-top: 25px;
+}
+
+/*Cajas de Resultado*/
+#encodedBox, #decodedBox {
+  display: none;
+  margin-top: 15px; 
+}
+
+/*Footer*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(112, 109, 116, 0.596);
+    color: white;
+    text-align: center;
+}
+
+#toMain {
+  float: left;
+  margin: 0px 10px;
+}
+
+
+
+
+
+
+
+
+
 
