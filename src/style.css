@@ -29,7 +29,6 @@ h1 {
   max-width: 20%;
   min-width: 450px;
   max-height: 100%;
-  min-height: 100%;
   background-color: rgba(218, 218, 218, 0.699);
   padding: 30px;
   border-radius: 15px; 
@@ -47,7 +46,7 @@ h1 {
 
 /*Botones de pregunta*/  
 #cipherBox {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #decipherBox {
@@ -78,10 +77,11 @@ textarea {
   height: 100px;
   width: 450px;
   resize: none;
+  border-radius: 3px;
 }
 
 input {
-  width: 50px;
+  width: 40px;
 }
 
 .btnBox {
@@ -110,13 +110,3 @@ footer {
   float: left;
   margin: 0px 10px;
 }
-
-
-
-
-
-
-
-
-
-

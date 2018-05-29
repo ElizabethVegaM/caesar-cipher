@@ -18,20 +18,18 @@ window.onload = () => {
     document.getElementById('decodeBox').style.display = 'block';
     welcomeBox.style.display = 'none';
   });
-
+  
   //Cifrado
   cipherBtn.addEventListener('click', () => {
-    let txtToCode = document.getElementById('txtToCode').value.toUpperCase();
-    let offsetCode = document.getElementById('numToMove').value;
-    
-    console.log(txtToCode.charCodeAt(offsetCode));
-
+    let readyMsg = window.cipher.encode()
+    document.getElementById('encodedMsg').value = readyMsg;
     document.getElementById('encodedBox').style.display = 'block';
-  });
+    });
+    
 
   //Descifrado
   decipherBtn.addEventListener('click', () => {
-    let txtToDecode = document.getElementById('txtToDecode').value;
+    let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
     let offsetDecode = document.getElementById('numToMoveDec').value;
     
   
@@ -45,5 +43,5 @@ window.onload = () => {
     location.reload();
     });
 
-}
+};
 
