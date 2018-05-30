@@ -1,8 +1,7 @@
 window.cipher = {
-  encode: () => {
+  encode: (txtToCode, offsetCode) => {
     console.log(`Ingresando en Cipher Code`);   
-    let txtToCode = document.getElementById('txtToCode').value.toUpperCase();
-    let offsetCode = document.getElementById('numToMove').value; 
+    
     console.log(`La frase a cifrar es ${txtToCode} y se moverá ${offsetCode} carácteres`);
     
     let encodedMsg = '';
@@ -12,8 +11,7 @@ window.cipher = {
       if(txtToCode.charCodeAt(i) === 32) {
         cipher = ' ';
         encodedMsg += ' ';
-      }
-      console.log(cipher);     
+      } 
       encodedMsg += String.fromCharCode(cipher);
     }
     return encodedMsg;
@@ -22,7 +20,7 @@ window.cipher = {
   console.log(`Ingresando en Decipher Code`);   
   let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
   let offsetDecode = document.getElementById('numToMoveDec').value; 
-  console.log(`La frase a cifrar es ${txtToDecode} y se moverá ${offsetDecode} carácteres`);
+  console.log(`La frase a descifrar es ${txtToDecode} y se moverá ${offsetDecode} carácteres`);
   
   let decodedMsg = '';
 

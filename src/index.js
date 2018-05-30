@@ -21,7 +21,9 @@ window.onload = () => {
   
   //Cifrado
   cipherBtn.addEventListener('click', () => {
-    let readyMsg = window.cipher.encode();
+    let txtToCode = document.getElementById('txtToCode').value.toUpperCase();
+    let offsetCode = document.getElementById('numToMove').value; 
+    let readyMsg = window.cipher.encode(txtToCode, offsetCode);
     document.getElementById('encodedMsg').value = readyMsg;
     document.getElementById('encodedBox').style.display = 'block';
     });
@@ -29,7 +31,9 @@ window.onload = () => {
 
   //Descifrado
   decipherBtn.addEventListener('click', () => {
-    let readyMsg = window.cipher.decode();
+    let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
+    let offsetDecode = document.getElementById('numToMoveDec').value; 
+    let readyMsg = window.cipher.decode(txtToDecode, offsetDecode);
     document.getElementById('decodedMsg').value = readyMsg;
     document.getElementById('decodedBox').style.display = 'block';
   });
