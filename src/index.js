@@ -21,7 +21,7 @@ window.onload = () => {
   
   //Cifrado
   cipherBtn.addEventListener('click', () => {
-    let readyMsg = window.cipher.encode()
+    let readyMsg = window.cipher.encode();
     document.getElementById('encodedMsg').value = readyMsg;
     document.getElementById('encodedBox').style.display = 'block';
     });
@@ -29,11 +29,8 @@ window.onload = () => {
 
   //Descifrado
   decipherBtn.addEventListener('click', () => {
-    let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
-    let offsetDecode = document.getElementById('numToMoveDec').value;
-    
-  
-    //aquí lo de la fórmula de decode xD
+    let readyMsg = window.cipher.decode();
+    document.getElementById('decodedMsg').value = readyMsg;
     document.getElementById('decodedBox').style.display = 'block';
   });
   

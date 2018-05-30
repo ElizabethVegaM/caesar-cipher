@@ -17,10 +17,25 @@ window.cipher = {
       encodedMsg += String.fromCharCode(cipher);
     }
     return encodedMsg;
-    //(x - 65 + n) % 26 + 65
   },
-  decode: () => {
-    /* Acá va tu código */
+  decode: () => {    
+  console.log(`Ingresando en Decipher Code`);   
+  let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
+  let offsetDecode = document.getElementById('numToMoveDec').value; 
+  console.log(`La frase a cifrar es ${txtToDecode} y se moverá ${offsetDecode} carácteres`);
+  
+  let decodedMsg = '';
+
+  for(let i = 0; i < txtToDecode.length; i++) {
+    let cipher = (txtToDecode.charCodeAt(i) - 65 - parseInt(offsetDecode)) % 26 + 65;
+    if(txtToDecode.charCodeAt(i) === 32) {
+      cipher = ' ';
+      decodedMsg += ' ';
+    }
+    console.log(cipher);     
+    decodedMsg += String.fromCharCode(cipher);
+  }
+  return decodedMsg;
   }
 }
 
