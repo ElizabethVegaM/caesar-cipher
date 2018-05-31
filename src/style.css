@@ -30,6 +30,8 @@ header {
 }
 
 #greekLogo {
+  position: relative;
+  left: -75px;
   width: 12%;
 }
 
@@ -37,6 +39,53 @@ h1 {
   font-family: 'Modern Antiqua', cursive;
   font-size: 50px;
   color: #2f496e;
+}
+
+/*Pop-up con isntrucciones*/
+.popup {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #d4cccc;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  margin-left: -80px;
+  font-family: 'Cormorant', serif;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 /*Estilos generales de las cajas*/

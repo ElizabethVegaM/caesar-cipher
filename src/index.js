@@ -7,6 +7,12 @@ window.onload = () => {
   const decipherBtn = document.getElementById('decipherBtn');
   const decodedBox = document.getElementById('decodedBox');
 
+  //Pop-up que muestra las instrucciones
+  document.getElementById('popUp').addEventListener('click' , () => {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  });
+
   //Para mostrar la caja con el proceso de cifrado
   encodeBtn.addEventListener('click', () => {
     document.getElementById('encodeBox').style.display = 'block';
@@ -45,4 +51,6 @@ window.onload = () => {
     });
 
 };
+
+
 
