@@ -3,72 +3,77 @@
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
-  <!-- Poner iconos, buscar en gugul -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css" />
+  <!-- Tipografía utilizada -->
+  <link href="https://fonts.googleapis.com/css?family=Cormorant|Inconsolata|Modern+Antiqua" rel="stylesheet">
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Título de mi página -->
-  <header>
-    <h1>Cifrado César</h1>
-  </header>
-  <!-- Sección de bienvenida -->
-  <section id="welcomeBox">
-    <h3>Bienvenido/a, ¿qué te gustaría hacer?</h3>
-    <!-- Botones de pregunta -->
-    <div>
-          <div class="options" id="cipherBox">
-      <button id="encodeBtn">Cifrar un mensaje</button>
-    </div>
-    <div class="options" id="decipherDox">
-      <button id="decodeBtn">Descifrar un mensaje</button>
-    </div>
-    </div>
-
-  </section>
-  <!-- Caja de cifrado -->
-  <section id="encodeBox">
-    <div>
+  <div class="container">
+    <!-- Título de mi página -->
+    <header>
+      <div class="top">
+        <img id="greekLogo" src="img/greek.png" alt="">
+      </div> 
+    </header>
+    <!-- Sección de bienvenida -->
+    <section id="welcomeBox">
+      <h3>BIENVENIDO A CAESAR CIPHER <br> ¿QUÉ TE GUSTARIA HACER?</h3>
+      <!-- Botones de pregunta -->
+      <div>
+        <div class="options" id="cipherBox">
+          <button class="btn" id="encodeBtn">Cifrar un mensaje</button>
+        </div>
+      <div class="options" id="decipherBox">
+        <button class="btn" id="decodeBtn">Descifrar un mensaje</button>
+      </div>
+      </div>
+    </section>
+    <!-- Caja de cifrado -->
+    <section id="encodeBox">
+      <div>
         <h3>Ingrese el texto a cifrar: </h3>
         <textarea class="textBox" id="txtToCode" cols="30" rows="3" maxlength="300" required></textarea>
-    </div>
-    <div>
+      </div>
+      <div class="inputs">
         <h3>Ingrese la cantidad de letras a desplazarse: </h3>
         <input type="number" id="numToMove" min="1" max="50" minlength="1" maxlength="2" required>
-    </div>
-    <div class="btnBox">
-        <button id="cipherBtn" type="submit">Cifrar</button>
-    </div>
-    <!-- Resultado del Cifrado -->
-    <div id="encodedBox">
-      <textarea class="textBox" id="encodedMsg" cols="30" rows="3" maxlength="300" readonly required></textarea>
-    </div> 
-  </section>
-  <!-- Caja de descifrado -->
-  <section id="decodeBox">
+      </div>
+      <div class="btnBox">
+        <button class="btn" id="cipherBtn" type="submit">Cifrar</button>
+      </div>
+      <!-- Resultado del Cifrado -->
+      <div id="encodedBox">
+        <textarea class="textBox" id="encodedMsg" cols="30" rows="3" maxlength="300" readonly required></textarea>
+      </div> 
+    </section>
+    <!-- Caja de descifrado -->
+    <section id="decodeBox">
       <div>
-          <h3>Ingrese el texto a descifrar: </h3>
+        <h3>Ingrese el texto a descifrar: </h3>
           <textarea name="" class="textBox" id="txtToDecode" cols="30" rows="3" maxlength="300" required></textarea>
       </div>
       <div>
-          <h3>Ingrese la cantidad de letras a desplazarse: </h3>
-          <input type="number" name="" id="numToMoveDec" min="1" max="50" required>
+        <h3>Ingrese la cantidad de letras a desplazarse: </h3>
+        <input type="number" name="" id="numToMoveDec" min="1" max="50" required>
       </div>
       <div class="btnBox">
-          <button id="decipherBtn" type="submit">Descifrar</button>
+        <button class="btn" id="decipherBtn" type="submit">Descifrar</button>
       </div>
       <!-- Resultado del descifrado -->
       <div id="decodedBox">
         <textarea class="textBox" id="decodedMsg" cols="30" rows="3" maxlength="300" readonly></textarea>
       </div>
     </section>
-
-    <div id="root"></div>
-    <!-- Footer duh! -->
+      <!-- Footer duh! -->
     <footer>
-      <button id="toMain">Volver al inicio</button>
+      <button class="btn" id="toMain"><i class="fas fa-home fa-1g"></i>Volver al inicio</button>
+      <p>DISEÑADO POR EVM © LABORATORIA CHILE 2018 </p>
       <div></div>
     </footer>
+  </div>
+  <script src="https://use.fontawesome.com/bcdca04cbe.js"></script>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>

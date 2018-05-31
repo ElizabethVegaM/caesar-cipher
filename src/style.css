@@ -1,26 +1,42 @@
 /*Estilos generales de la página*/
-* {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+  background-image: url(img/Under-The-Sea.jpg);
+  background-size: 100%;
+  text-align: center;
 }
 
-body {
-  text-align: center;
-  background: #1C0920;
-  background-image: url(https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png);
-  background-size: 100%;
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 h3 {
   display: inline-block;
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #2f496e;
+}
+
+h4 {
+  font-family: 'Cormorant', serif;
+  font-size: 15px;
+  color: #2f496e;
 }
 
 /*Header*/
 header {
-  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#greekLogo {
+  width: 12%;
 }
 
 h1 {
-  font-size: 80px;
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 50px;
+  color: #2f496e;
 }
 
 /*Estilos generales de las cajas*/
@@ -29,14 +45,13 @@ h1 {
   max-width: 20%;
   min-width: 450px;
   max-height: 100%;
-  background-color: rgba(218, 218, 218, 0.699);
-  padding: 30px;
+  background-color: #f4eadea9;
+  padding: 20px;
   border-radius: 15px; 
   box-shadow: 5px 5px 5px rgba(58, 57, 57, 0.753);
   }
 
 /*Sección de Bienvenida*/
-
 .options {
   height: 100px;
   width: 150px;
@@ -51,12 +66,16 @@ h1 {
 
 #decipherBox {
   margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2f496e;
 }
 
 #encodeBtn, #decodeBtn {
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px;
   box-shadow: 3px 3px 3px rgba(58, 57, 57, 0.753);
+  font-family: 'Modern Antiqua', cursive;
+  color: #2f496e;
 }
 
 /*Cajas de Cifrado y Descifrado*/
@@ -70,7 +89,9 @@ h1 {
 }
 
 #cipherBtn, #decipherBtn {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Modern Antiqua', cursive;
+  color: #2f496e;
 }
 
 textarea {
@@ -78,14 +99,13 @@ textarea {
   width: 450px;
   resize: none;
   border-radius: 3px;
+  font-family: 'Inconsolata', monospace;
 }
 
 input {
   width: 40px;
-}
-
-.btnBox {
-  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: 'Inconsolata', monospace;
 }
 
 /*Cajas de Resultado*/
@@ -96,17 +116,27 @@ input {
 
 /*Footer*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: rgba(112, 109, 116, 0.596);
-    color: white;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(112, 109, 116, 0.596);
+  color: white;
+  text-align: center;
+}
+
+p {
+  float: right;
+  padding: 0px 10px;
+  font-family: 'Cormorant', serif;
+  font-size: 15px;
+  color: white;
 }
 
 #toMain {
   float: left;
-  margin: 0px 10px;
+  margin: 5px 5px;
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 14px;
 }
