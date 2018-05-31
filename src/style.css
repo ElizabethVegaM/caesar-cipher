@@ -66,7 +66,6 @@ h1 {
 
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
@@ -169,15 +168,15 @@ footer {
 
 p {
   float: right;
-  padding: 0px 10px;
+  margin-right: 10px;
   font-family: 'Cormorant', serif;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
 #toMain {
   float: left;
-  margin: 5px 5px;
+  margin-top: 10px;
   font-family: 'Modern Antiqua', cursive;
   font-size: 14px;
 }
