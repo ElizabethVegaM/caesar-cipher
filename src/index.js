@@ -37,7 +37,7 @@ window.onload = () => {
 
   //Descifrado
   decipherBtn.addEventListener('click', () => {
-    let txtToDecode = document.getElementById('txtToDecode').value;
+    let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
     let offsetDecode = document.getElementById('numToMoveDec').value;
     let readyMsg = window.cipher.decode(txtToDecode, offsetDecode);
     document.getElementById('decodedMsg').value = readyMsg;
