@@ -44,7 +44,6 @@ window.onload = () => {
     document.getElementById('decodedBox').style.display = 'block';
   });
 
-
   //Para "volver" a la página principal
   toMainBtn.addEventListener('click', () => {
     location.reload();
