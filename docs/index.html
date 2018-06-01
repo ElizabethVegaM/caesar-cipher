@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <!-- Tipografía utilizada -->
+  <link href="https://fonts.googleapis.com/css?family=Cormorant|Inconsolata|Modern+Antiqua" rel="stylesheet">
+  <!-- Íconos y Fuentes-->
+  <link rel="shortcut icon" href="img/greek.png" type="image/png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Título de mi página -->
+    <header>
+      <div class="popup" id="popUp"> <strong>INSTRUCCIONES</strong>
+        <span class="popuptext" id="myPopup">
+            1. Elige una opción dependiendo de si quieres cifrar o descifrar un mensaje. <br>
+            2. Ingresa tu mensaje en el cuadro de texto. No ingresar caracteres especiales ni de puntuación. Espacios permitidos. <br>
+            3. Ingresa el número de caracteres que deseas moverte. <br>
+            4. A cifrar/descifrar! </span>
+      </div>
+      <div class="top">
+        <img id="greekLogo" src="img/greek.png" alt="">
+      </div>
+    </header>
+    <!-- Sección de bienvenida -->
+    <section id="welcomeBox">
+      <h3>BIENVENIDO A CAESAR CIPHER <br> ¿QUÉ TE GUSTARIA HACER?</h3>
+      <!-- Botones de pregunta -->
+      <div>
+        <div class="options" id="cipherBox">
+          <button class="btn" id="encodeBtn">Cifrar un mensaje</button>
+        </div>
+        <div class="options" id="decipherBox">
+          <button class="btn" id="decodeBtn">Descifrar un mensaje</button>
+        </div>
+      </div>
+    </section>
+    <!-- Caja de cifrado -->
+    <section id="encodeBox">
+      <div>
+        <h3>Ingrese el texto a cifrar: </h3>
+        <textarea class="textBox" id="txtToCode" cols="30" rows="3" maxlength="300" required></textarea>
+      </div>
+      <div class="inputs">
+        <h3>Ingrese la cantidad de letras a desplazarse: </h3>
+        <input type="number" id="numToMove" min="1" max="50" required>
+      </div>
+      <div class="btnBox">
+        <button class="btn" id="cipherBtn" type="submit">Cifrar</button>
+      </div>
+      <!-- Resultado del Cifrado -->
+      <div id="encodedBox">
+        <textarea class="textBox" id="encodedMsg" cols="30" rows="3" maxlength="300" readonly required></textarea>
+      </div>
+    </section>
+    <!-- Caja de descifrado -->
+    <section id="decodeBox">
+      <div>
+        <h3>Ingrese el texto a descifrar: </h3>
+        <textarea class="textBox" id="txtToDecode" cols="30" rows="3" maxlength="300" required></textarea>
+      </div>
+      <div>
+        <h3>Ingrese la cantidad de letras a desplazarse: </h3>
+        <input type="number" id="numToMoveDec" min="1" max="50" required>
+      </div>
+      <div class="btnBox">
+        <button class="btn" id="decipherBtn" type="submit">Descifrar</button>
+      </div>
+      <!-- Resultado del descifrado -->
+      <div id="decodedBox">
+        <textarea class="textBox" id="decodedMsg" cols="30" rows="3" maxlength="300" readonly></textarea>
+      </div>
+    </section>
+    <!-- Footer duh! -->
+    <footer>
+      <button class="btn" id="toMain"><i class="fas fa-home fa-1g"></i>Volver al inicio</button>
+      <p>DISEÑADO POR EVM © LABORATORIA CHILE 2018 </p>
+      <div></div>
+    </footer>
+  </div>
+  <script src="https://use.fontawesome.com/bcdca04cbe.js"></script>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

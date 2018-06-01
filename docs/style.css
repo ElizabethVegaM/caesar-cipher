@@ -1,0 +1,182 @@
+/*Estilos generales de la página*/
+body {
+  background-image: url(img/Under-The-Sea.jpg);
+  background-size: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+h3 {
+  display: inline-block;
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #2f496e;
+}
+
+h4 {
+  font-family: 'Cormorant', serif;
+  font-size: 15px;
+  color: #2f496e;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#greekLogo {
+  position: relative;
+  left: -75px;
+  width: 12%;
+}
+
+h1 {
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 50px;
+  color: #2f496e;
+}
+
+/*Pop-up con isntrucciones*/
+.popup {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #d4cccc;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #2f496e83;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  margin-left: -120px;
+  font-family: 'Cormorant', serif;
+}
+
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*Estilos generales de las cajas*/
+#welcomeBox, #encodeBox, #decodeBox {
+  margin: auto;
+  max-width: 20%;
+  min-width: 450px;
+  max-height: 100%;
+  background-color: #f4eadea9;
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 5px rgba(58, 57, 57, 0.753);
+  }
+
+/*Sección de Bienvenida*/
+.options {
+  height: 100px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Botones de pregunta*/  
+#cipherBox {
+  margin-top: 20px;
+}
+
+#decipherBox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2f496e;
+}
+
+#encodeBtn, #decodeBtn {
+  font-size: 18px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px rgba(58, 57, 57, 0.753);
+  font-family: 'Modern Antiqua', cursive;
+  color: #2f496e;
+}
+
+/*Cajas de Cifrado y Descifrado*/
+.textBox {
+  display: block;
+  text-align: initial;
+}
+#encodeBox, #decodeBox {
+  display: none;
+  width: 60%;
+}
+
+#cipherBtn, #decipherBtn {
+  font-size: 18px;
+  font-family: 'Modern Antiqua', cursive;
+  color: #2f496e;
+}
+
+textarea {
+  height: 100px;
+  width: 450px;
+  resize: none;
+  border-radius: 3px;
+  font-family: 'Inconsolata', monospace;
+}
+
+input {
+  width: 40px;
+  margin-bottom: 10px;
+  font-family: 'Inconsolata', monospace;
+}
+
+/*Cajas de Resultado*/
+#encodedBox, #decodedBox {
+  display: none;
+  margin-top: 15px; 
+}
+
+/*Footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(112, 109, 116, 0.596);
+  color: white;
+  text-align: center;
+}
+
+p {
+  float: right;
+  margin-right: 10px;
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: white;
+}
+
+#toMain {
+  float: left;
+  margin-top: 10px;
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 14px;
+}
