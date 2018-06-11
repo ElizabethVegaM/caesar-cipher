@@ -7,25 +7,25 @@ window.onload = () => {
   const decipherBtn = document.getElementById('decipherBtn');
   const decodedBox = document.getElementById('decodedBox');
 
-  //Pop-up que muestra las instrucciones
+  // Pop-up que muestra las instrucciones
   document.getElementById('popUp').addEventListener('click', () => {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+    const popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
   });
 
-  //Para mostrar la caja con el proceso de cifrado
+  // Para mostrar la caja con el proceso de cifrado
   encodeBtn.addEventListener('click', () => {
     document.getElementById('encodeBox').style.display = 'block';
     welcomeBox.style.display = 'none';
   });
 
-  //Para mostrar el proceso de descifrado
+  // Para mostrar el proceso de descifrado
   decodeBtn.addEventListener('click', () => {
     document.getElementById('decodeBox').style.display = 'block';
     welcomeBox.style.display = 'none';
   });
 
-  //Cifrado
+  // Cifrado
   cipherBtn.addEventListener('click', () => {
     let txtToCode = document.getElementById('txtToCode').value;
     let offsetCode = document.getElementById('numToMove').value;
@@ -34,19 +34,17 @@ window.onload = () => {
     document.getElementById('encodedBox').style.display = 'block';
   });
 
-
-  //Descifrado
+  // Descifrado
   decipherBtn.addEventListener('click', () => {
-    let txtToDecode = document.getElementById('txtToDecode').value.toUpperCase();
+    let txtToDecode = document.getElementById('txtToDecode').value;
     let offsetDecode = document.getElementById('numToMoveDec').value;
     let readyMsg = window.cipher.decode(txtToDecode, offsetDecode);
     document.getElementById('decodedMsg').value = readyMsg;
     document.getElementById('decodedBox').style.display = 'block';
   });
 
-  //Para "volver" a la página principal
+  // Para "volver" a la página principal
   toMainBtn.addEventListener('click', () => {
     location.reload();
   });
-
 };
